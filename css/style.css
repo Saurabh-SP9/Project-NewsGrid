@@ -36,7 +36,7 @@ ul {
   list-style: none;
 }
 
-.img {
+img {
   width: 100%;
 }
 
@@ -111,6 +111,51 @@ h4 {
   padding: 0.5rem;
 }
 
+.card {
+  background: #fff;
+  padding: 1rem;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+
+.bg-dark a:link,
+.bg-primary a:link,
+.bg-secondary a:link {
+  color: #fff;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
 /* navigation */
 .main-nav {
   background-color: #fff;
@@ -192,4 +237,24 @@ h4 {
 
 .showcase .showcase-content p {
   margin-bottom: 1rem;
+}
+
+/* Home articles */
+.home-articles .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.home-articles .articles-container > *:first-child,
+.home-articles .articles-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  grid-column: 1 / span 2;
+  align-items: center;
+}
+
+.home-articles .articles-container > *:last-child {
+  grid-column: 2 / span 2;
 }
